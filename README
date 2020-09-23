@@ -1,0 +1,18 @@
+Zach Morrissey
+Willem Schreuder
+CSCI 4229
+17 September 2020
+
+Homework 2 - Lorenz Attractor
+
+
+Running the code: It can be compiled on Linux using make clean, then make, assuming openGL and a C compiler are installed properly on your system. Using CU's specific glut library it can be compiled on Windows using the command gcc -Wall -o LorenzAttractor LorenzAttractor.c -lglut32cu -lglu32 -lopengl32. The arrow keys control the viewing angle, + and - scale the Lorenz attractor, and 0 resets viewing angle, scale, and lorenz parameters. To modify each parameter s, b, and r we use S, B, R to scale up and s, b, r to scale down.
+
+
+Borrowed code: I borrowed a good amount from ex6 to make the assignment a little faster. I borrowed the entire special and reshape functions since I wasn't sure how to implement the reshape function safely otherwise, and the special function (and rotate statements in display) is simple enough and I wanted the exact same behavior as ex6. The Lorenz.c code was also borrowed and modified so instead of printing the values, they get entered as coordinates for the next vertex.
+
+Other Resources: I used this link https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html
+to write my makefile since I don't have any prior experience writing one. I simply followed their format for a basic makefile for a single .c file.
+
+
+Time to Complete: 2 hours to get a basic 3D curve with axes, labels, color, and rotation. This is a rather simple program so it didn't take long to get to the minimum requirements, especially because borrowing code is permitted. It took another hour to upload to git, then clone to my linux VM (familiarizing myself with git) to test there. I spent another hour at least just messing with the display function colors. Total: 4 hours.
